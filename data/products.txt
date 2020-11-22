@@ -1,0 +1,3 @@
+001,Vegetable seeds,150,5
+002,Fertilizer,5000,10
+003,Lichi plant,250,15
