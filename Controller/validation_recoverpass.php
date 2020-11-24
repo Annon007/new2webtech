@@ -74,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 </style>
 <h1>Password Recover</h1>
 <div>
-	<form action="../view/recoverpass.php" method="POST">
+	<form action="/RB/view/recoverpass.php" method="POST">
   <label style="color:blue" for="EmailAddress">Email:</label><?php echo $EmailAddresserror ; ?><br>
   <input type="text" id="EmailAddress" name="EmailAddress" value="" placeholder =<?php echo $EmailAddress?>><br>
   

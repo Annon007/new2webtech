@@ -82,8 +82,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         /*How to write*/
 
- 
-
+		 if(empty($_REQUEST["FirstName"]))
+		 {
+			 echo "text file is blank <br> click here to <a href='/RB/View/signup.php'>Try again</a>";
+		 }
+		else
+		{
         $fileW = fopen("../data/newuser.txt", "a+") or die("Unable to open file");
 
 		fwrite($fileW, $EmailAddress.",");
@@ -100,7 +104,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		fwrite($fileW, $EmailAddress.",");
 		fwrite($fileW, $Password);
 		
-		fclose($fileW);
+		fclose($fileW);}
 		
 		
 		
@@ -126,7 +130,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 </style>
 <h1>Sign up , for new account</h1>
 <div>
-<form action="../view/signup.php" method="POST">
+<form action="/RB/view/signup.php" method="POST">
   <label style="color:blue" for="FirstName">First name:</label><?php echo $FirstNameerror ; ?><br>
   <input type="text" id="FirstName" name="FirstName" value=""><br>
   

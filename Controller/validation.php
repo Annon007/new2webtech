@@ -30,8 +30,12 @@ fclose($myfile);
 		$email=$_POST['email'];
 		
 		$password=$_POST['password'];
+		if( $email==null)
+		{
+			echo "Please enter email and passwrod to login <a href='/RB/View/login.php'>Try again</a> ";
+		}
 		
-		if($email==$myemail and $password==$mypass)
+		else if($email==$myemail  and $password==$mypass)
 		{
 			//setcookie('email',$email,time()+60);
 			session_start();

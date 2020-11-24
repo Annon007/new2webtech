@@ -12,7 +12,7 @@ $FirstNameerror = "";
 {
 	$words = explode(",",$line);
 	$myemail=$words[0];
-	session_start();
+	//session_start();
 	
 	if($_SESSION['email']=$myemail)
 	{
@@ -27,7 +27,7 @@ $FirstNameerror = "";
 	$PhoneNumber=$myphonenumber;
 	$Address=$myaddress;
 	}
-	else {echo "Something is Wrong";};
+	else {};
 	
 	
 	
@@ -55,7 +55,7 @@ fclose($myfile);
 </style>
 <h1>Personal Info.</h1>
 <div>
-	<form action="../controller/validation_updateinfo.php" method="POST">
+	<form action="/RB/controller/validation_updateinfo.php" method="POST">
   <label style="color:blue" for="FirstName">First name:</label><?php echo $FirstNameerror ; ?><br>
   <input type="text" id="FirstName" name="FirstName" value="" placeholder =<?php echo $FirstName?>><br>
   

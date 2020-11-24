@@ -21,7 +21,7 @@ $FirstNameerror = "";
 	$Password=$mypass;
 	
 	}
-	else {echo "Something is Wrong";};
+	else {};
 	
 	
 	
@@ -49,7 +49,7 @@ fclose($myfile);
 </style>
 <h1>Password Recover</h1>
 <div>
-	<form action="../controller/validation_recoverpass.php" method="POST">
+	<form action="/RB/controller/validation_recoverpass.php" method="POST">
   <label style="color:blue" for="EmailAddress">Email:</label><br>
   <input type="text" id="EmailAddress" name="EmailAddress" value="" placeholder =<?php echo $EmailAddress?>><br>
   

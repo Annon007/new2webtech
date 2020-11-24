@@ -80,7 +80,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	
 	if(empty($_REQUEST["FirstName"]))
 	{
-		echo "Your Profile is not updated<br> click here to <a href='/RB/View/updateinfo.php'>Try again</a>";
+		echo "Your Profile is not updated<br> click here to <a href='/RB(user)/new2webtech/View/updateinfo.php'>Try again</a>";
 	}
 	else {
         $fileW = fopen("../data/UpdatedProfiles.txt", "w") or die("Unable to open file");

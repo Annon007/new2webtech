@@ -21,7 +21,7 @@ $FirstNameerror = "";
 </style>
 <h1>Sign up , for new account</h1>
 <div>
-	<form action="../controller/validation_signup.php" method="POST">
+	<form action="/RB/controller/validation_signup.php" method="POST">
   <label style="color:blue" for="FirstName">First name:</label><?php echo $FirstNameerror ; ?><br>
   <input type="text" id="FirstName" name="FirstName" value=""><br>
   
