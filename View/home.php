@@ -43,7 +43,11 @@ div {text-align: right;}
       fclose($myfile);
     ?>
 	</ol>
+	<h1>
 	
+    <?php include '../view/fotter.php' ?>
+	
+</h1>
 
 
 

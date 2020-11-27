@@ -48,7 +48,13 @@ echo "<br>";
       #echo fread($myfile, filesize("data/products.txt"));
       while ($line = fgets($myfile)) {
 		  echo "<br>";
-        echo $line."<br>"."<button>Add to cart</button>";
+        echo $line."<br>";
+		print("<form action='../view/See_order.php' method='post'> 
+		
+		
+        <input type='submit' value='Add to cart' name='add' >
+	  </form>");
+
 		echo "<br>";
 		
       }

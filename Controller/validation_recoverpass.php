@@ -34,13 +34,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		echo "Your Password is not updated<br> click here to <a href='/RB/View/recoverpass.php'>Try again</a>";
 	}
 	else
-	{$fileW = fopen("../data/Updatedpassword.txt", "a") or die("Unable to open file");
+	{$fileW = fopen("../data/Updatedpassword.txt", "w") or die("Unable to open file");
 
  
 		
         fwrite($fileW, $EmailAddress.",");
         fwrite($fileW, $Password);
+		
+	$fileW = fopen("../data/user.txt", "w") or die("Unable to open file");
 
+ 
+		
+        fwrite($fileW, $EmailAddress.",");
+        fwrite($fileW, $Password);
 		
 		
 		
